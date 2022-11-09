@@ -95,13 +95,17 @@ const baseConfig = {
     },
     optimization: {
         minimizer: [`...`, new CssMinimizerPlugin()],
+	runtimeChunk:'single',
     },
     devtool: false,
+    devServer:{
+	static:'./dist',
+    },
 };
 
 module.exports = (env, options) => {
     const isProduction = options.mode === "production";
-
+	
     if (isProduction) {
         baseConfig.mode = "production";
     } else {
@@ -110,4 +114,5 @@ module.exports = (env, options) => {
     }
 
     return baseConfig;
+
 };

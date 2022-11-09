@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css","sourcesContent":[]}
+{"version":3,"file":"main.css","mappings":";;;AAAA;EACI;EACA;EACA;AACJ;;AACA;EACI;EACA;AAEJ,C","sources":["webpack://gravity-global-recruitment-task/./src/scss/main.scss"],"sourcesContent":[".Element{\r\n    display:flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n}\r\n.body{\r\n    background-color: red;\r\n    color:blue;\r\n}    \r\n\r\n"],"names":[],"sourceRoot":""}
