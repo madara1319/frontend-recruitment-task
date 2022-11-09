@@ -29,5 +29,8 @@
     "webpack": "5.64.x",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^5.5.0"
   }
 }

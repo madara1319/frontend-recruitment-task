@@ -3,6 +3,7 @@ const globImporter = require("node-sass-glob-importer");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const Without = require("./tools/webpack-without");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const baseConfig = {
     entry: {
@@ -97,6 +98,13 @@ const baseConfig = {
         minimizer: [`...`, new CssMinimizerPlugin()],
 	runtimeChunk:'single',
     },
+    plugins:[
+        new HtmlWebpackPlugin({
+            inject:'body',
+            template:'./index.html',
+            filename:'index.html'
+        })
+    ],
     devtool: false,
     devServer:{
 	static:'./dist',
